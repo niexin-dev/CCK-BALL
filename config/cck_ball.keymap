@@ -55,11 +55,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC           &kp N1        &kp N2  &kp N3       &kp N4       &kp N5      &kp N6  &kp N7     &kp N8     &kp N9          &kp N0          &kp BACKSLASH
-&kp TAB           &kp Q         &kp W   &kp E        &kp R        &kp T       &kp Y   &kp U      &kp I      &kp O           &kp P           &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A         &kp S   &kp D        &kp F        &kp G       &kp H   &kp J      &kp K      &kp L           &kp SEMI        &kp SQT
-&kp LEFT_SHIFT    &kp Z         &kp X   &kp C        &kp V        &kp B       &kp N   &kp M      &kp COMMA  &kp DOT         &kp SLASH       &kp UP_ARROW
-&lt 4 LEFT_WIN    &kp LEFT_ALT  &mo 1   &lt 3 SPACE  &lt 4 GRAVE  &kp DELETE  &mo 2   &kp MINUS  &kp ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp ESC           &kp N1        &kp N2        &kp N3     &kp N4  &kp N5       &kp N6  &kp N7     &kp N8     &kp N9          &kp N0          &kp BACKSLASH
+&kp TAB           &kp Q         &kp W         &kp E      &kp R   &kp T        &kp Y   &kp U      &kp I      &kp O           &kp P           &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A         &kp S         &kp D      &kp F   &kp G        &kp H   &kp J      &kp K      &kp L           &kp SEMI        &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X         &kp C      &kp V   &kp B        &kp N   &kp M      &kp COMMA  &kp DOT         &kp SLASH       &kp UP_ARROW
+&kp LEFT_WIN      &kp LEFT_ALT  &lt 3 DELETE  &kp SPACE  &mo 1   &lt 4 TILDE  &mo 2   &kp MINUS  &kp ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -71,7 +71,7 @@
             bindings = <
 &kp F12       &kp F1          &kp F2          &kp F3        &kp F4           &kp F5  &kp F6      &kp F7      &kp F8     &kp F9         &kp F10           &kp F11
 &kp CAPSLOCK  &none           &none           &none         &none            &trans  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &mkp LCLK   &mkp RCLK   &kp HOME   &kp PAGE_UP    &trans            &kp ENTER
+&trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &mkp LCLK   &kp GRAVE   &kp HOME   &kp PAGE_UP    &trans            &kp ENTER
 &trans        &trans          &trans          &trans        &trans           &none   &none       &none       &kp END    &kp PAGE_DOWN  &none             &trans
 &trans        &trans          &trans          &trans        &trans           &trans  &mkp LCLK   &mkp RCLK   &trans     &trans         &trans            &trans
             >;
@@ -114,9 +114,10 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,
+                // 编码器1：上下滚动,,
                 <&scroll_horizontal_encoder>;
-  // 编码器2：左右滚动
+
+            // 编码器2：左右滚动
         };
     };
 };
