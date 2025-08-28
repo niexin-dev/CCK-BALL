@@ -71,8 +71,8 @@
             bindings = <
 &kp F12       &kp F1          &kp F2          &kp F3        &kp F4           &kp F5  &kp F6      &kp F7          &kp F8     &kp F9            &kp F10           &kp F11
 &kp CAPSLOCK  &none           &none           &none         &none            &trans  &kp DELETE  &kp INSERT      &kp EQUAL  &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp UP_ARROW
-&trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp GRAVE   &kp MINUS       &kp HOME   &kp PAGE_UP       &kp LEFT_ARROW    &kp RIGHT_ARROW
-&trans        &trans          &trans          &trans        &trans           &none   &kp TILDE   &kp UNDERSCORE  &kp END    &kp PAGE_DOWN     &kp DOWN_ARROW    &trans
+&trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp TILDE   &kp MINUS       &kp HOME   &kp PAGE_UP       &kp LEFT_ARROW    &kp RIGHT_ARROW
+&trans        &trans          &trans          &trans        &trans           &none   &kp GRAVE   &kp UNDERSCORE  &kp END    &kp PAGE_DOWN     &kp DOWN_ARROW    &trans
 &trans        &trans          &trans          &trans        &trans           &trans  &mkp LCLK   &mkp RCLK       &trans     &trans            &trans            &trans
             >;
 
@@ -114,7 +114,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
