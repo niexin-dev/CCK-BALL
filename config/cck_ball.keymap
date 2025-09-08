@@ -26,6 +26,10 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
+&lt {
+    tapping-term-ms = <500>;
+};
+
 / {
     // 上下滚动编码器行为
 
